@@ -1,0 +1,39 @@
+@import "colors";
+#first-section {
+  width: 100%;
+  border-top: 2px dashed $whit;
+  background-color: $black;
+  height: 100px;
+  .inner-div {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    h5 {
+      margin-right: 50px;
+      color: $whit;
+    }
+    #input-div {
+      position: relative;
+      #text-input {
+        width: 40vw;
+        color: $orange;
+        padding: 10px;
+        font-family: "Poppins", helvetica;
+        height: 2rem;
+        outline: $orange;
+        &::placeholder {
+          color: $orange;
+        }
+      }
+
+      i {
+        color: $orange;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+      }
+    }
+  }
+}
